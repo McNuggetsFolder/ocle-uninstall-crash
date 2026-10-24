@@ -1,0 +1,37 @@
+# Gradle / 构建产物
+.gradle/
+build/
+out/
+bin/
+run/
+run-*/
+.build-offline/
+build-tmp/
+
+# 打包产物：jar 走 GitHub Release，不进仓库
+dist/
+*.jar
+
+# IDE
+.idea/
+*.iml
+*.ipr
+*.iws
+.eclipse/
+.settings/
+.classpath
+.project
+.vscode/
+
+# 系统
+.DS_Store
+Thumbs.db
+
+# 自检临时目录
+tools/out/
+tools/build-check*/
+tools/*.log
+
+# 运行时产生的回收站（如果从项目目录里直接跑客户端）
+ocle_guard_trash/
+run*/ocle_guard_trash/
