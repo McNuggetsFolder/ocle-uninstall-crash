@@ -1,0 +1,32 @@
+modLoader="javafml"
+loaderVersion="[47,)"
+license="MIT"
+
+[[mods]]
+modId="ocle_uninstall_crash"
+version="1.0.0"
+displayName="加载绝对彼方就卸载崩溃"
+logoFile="icon.png"
+authors="鸡块"
+credits="由 WorkBuddy 生成"
+description='''
+在游戏启动初始化阶段扫描 .minecraft/tacz、.minecraft/versions/*/tacz 以及名字相似或内容带有 ocle 指纹的目录。
+一旦扫到 TaCZ 枪包「绝对彼方」（gunpack.meta.json 中 namespace=ocle），本模组会删除这些产物、注销自身监听器，
+并主动抛异常终止启动。扫不到则完全静默，不做任何事。
+
+本模组与「绝对彼方」设计上不可共存。
+'''
+
+[[dependencies.ocle_uninstall_crash]]
+modId="forge"
+mandatory=true
+versionRange="[47,)"
+ordering="NONE"
+side="BOTH"
+
+[[dependencies.ocle_uninstall_crash]]
+modId="minecraft"
+mandatory=true
+versionRange="[1.20.1,1.21)"
+ordering="NONE"
+side="BOTH"

@@ -1,0 +1,41 @@
+{
+  "mod.name": "加载绝对彼方就卸载崩溃",
+  "mod.summary": "检测到绝对彼方枪包时，把它移入回收站并主动终止启动；文件只是被移动，随时可以恢复。",
+
+  "banner": "请勿同时加载此mod和绝对彼方",
+  "banner.en": "Do not load this mod together with Absolute Opponent",
+
+  "log.clean": "已扫描 {}，未发现绝对彼方产物，放行启动。",
+  "log.trash_history": "回收站里还有 {} 个批次的历史产物，可用 RESTORE.txt 恢复。",
+  "log.hit_count": "共检测到 {} 处绝对彼方产物，开始移入回收站：",
+  "log.hit": "命中: {}",
+  "log.source": "来源: {} | 证据: {}",
+  "log.moved": "已移入回收站: {}（{} 个文件 / {} 个目录 / {} 字节，{} ms）",
+  "log.move_failed": "移入回收站失败: {} -> {}",
+  "log.purged": "已注销自身事件监听器 {} 个。",
+  "log.report": "崩溃报告: {}",
+  "log.restore_guide": "恢复说明: {}",
+
+  "crash.description": "检测到绝对彼方枪包（TaCZ namespace=ocle），已将其移入回收站并主动终止游戏启动",
+  "crash.exception": "已把 {} 处产物移入回收站：{}",
+  "crash.section.hits": "命中与隔离详情",
+  "crash.section.restore": "如何恢复",
+  "crash.section.sysinfo": "系统信息",
+  "crash.section.stack": "调用栈",
+  "crash.gamedir": "游戏目录: {}",
+  "crash.trash": "回收站: {}",
+  "crash.item": "  [{}] {}",
+  "crash.item.source": "      发现途径: {}",
+  "crash.item.evidence": "      判定证据: {}",
+  "crash.item.result": "      处理结果: {}",
+  "crash.advice": "产物没有被删除，只是被移动到了回收站，内容与修改时间都没有改变。",
+  "crash.restore_entry": "恢复入口: {}",
+  "crash.advice.tail": "确认不再需要绝对彼方后，可以直接清空回收站；想两个都留，只能删掉本模组的 jar。",
+
+  "restore.title": "绝对彼方枪包已被移入回收站（可恢复）",
+  "restore.intro": "这里的东西没有被删除，只是从原位置移动了过来。文件内容、大小、修改时间都保持原样。",
+  "restore.from": "现在位置:",
+  "restore.to": "原始位置:",
+  "restore.steps": "恢复步骤:\n1. 完全退出游戏\n2. 把上面列出的文件或文件夹，从「现在位置」复制回「原始位置」\n3. 若仍保留本模组，恢复后下次启动会被再次移走\n4. 恢复前建议先备份一份",
+  "restore.note": "本模组与绝对彼方设计上不可共存。要两者都保留，只能移除本模组的 jar。"
+}

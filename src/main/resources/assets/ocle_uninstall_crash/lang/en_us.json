@@ -1,0 +1,41 @@
+{
+  "mod.name": "Load Absolute Opponent, Uninstall, Crash",
+  "mod.summary": "When the Absolute Opponent gun pack is detected, it is moved to a trash folder and startup is aborted on purpose. Nothing is deleted, so it can always be restored.",
+
+  "banner": "Do not load this mod together with Absolute Opponent",
+  "banner.en": "请勿同时加载此mod和绝对彼方",
+
+  "log.clean": "Scanned {}: no Absolute Opponent artifacts found, continuing startup.",
+  "log.trash_history": "{} historical batch(es) still sit in the trash folder, see RESTORE.txt to bring them back.",
+  "log.hit_count": "{} Absolute Opponent artifact(s) detected, moving them to the trash folder:",
+  "log.hit": "hit: {}",
+  "log.source": "source: {} | evidence: {}",
+  "log.moved": "moved to trash: {} ({} file(s) / {} dir(s) / {} bytes, {} ms)",
+  "log.move_failed": "failed to move: {} -> {}",
+  "log.purged": "unregistered {} own event listener(s).",
+  "log.report": "crash report: {}",
+  "log.restore_guide": "restore guide: {}",
+
+  "crash.description": "Absolute Opponent gun pack detected (TaCZ namespace=ocle); it was moved to the trash folder and startup was aborted on purpose",
+  "crash.exception": "{} artifact(s) moved to the trash folder: {}",
+  "crash.section.hits": "Detected artifacts and quarantine details",
+  "crash.section.restore": "How to restore",
+  "crash.section.sysinfo": "System info",
+  "crash.section.stack": "Stack trace",
+  "crash.gamedir": "Game directory: {}",
+  "crash.trash": "Trash folder: {}",
+  "crash.item": "  [{}] {}",
+  "crash.item.source": "      discovered by: {}",
+  "crash.item.evidence": "      evidence: {}",
+  "crash.item.result": "      result: {}",
+  "crash.advice": "Nothing was deleted. The files were only moved into the trash folder, content and timestamps unchanged.",
+  "crash.restore_entry": "Restore entry: {}",
+  "crash.advice.tail": "Empty the trash folder if you no longer need the pack; keeping both is only possible by removing this mod's jar.",
+
+  "restore.title": "Absolute Opponent gun pack was moved to the trash folder (restorable)",
+  "restore.intro": "Nothing here was deleted. These files were only moved out of their original location; content, size and timestamps are unchanged.",
+  "restore.from": "current location:",
+  "restore.to": "original location:",
+  "restore.steps": "How to restore:\n1. Quit the game completely\n2. Copy the listed file(s)/folder(s) from the current location back to the original location\n3. If this mod stays installed, they will be moved aside again on the next launch\n4. Back them up before restoring",
+  "restore.note": "This mod and Absolute Opponent cannot coexist by design. To keep both, remove this mod's jar."
+}

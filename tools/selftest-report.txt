@@ -1,0 +1,68 @@
+提示语常量: 请勿同时加载此mod和绝对彼方
+临时工作目录: C:\Users\ADMINI~1\AppData\Local\Temp\ocle-guard-selftest-9089475414934546302
+
+---- 目录名相似度 ----
+  [PASS] TaCZ 大小写变体
+  [PASS] tacz2 带序号
+  [PASS] tacz - 副本（噪声词+符号）
+  [PASS] tacz_old 后缀
+  [PASS] mytaczpack 子串
+  [PASS] tazc 打字颠倒
+  [PASS] tac 少一个字母
+  [PASS] config 不应命中
+  [PASS] saves 不应命中
+  [PASS] 中文目录名线索
+  [PASS] ocle 线索
+  [PASS] 普通目录名不命中
+---- 语言检测与语言表 ----
+  [PASS] options.txt lang:zh_cn -> ZH_CN
+  [PASS] options.txt lang:en_us -> EN_US
+  [PASS] 不支持的语言 ja_jp -> 回退 ZH_CN
+  [PASS] 没有 options.txt -> 回退 ZH_CN
+  [PASS] zh 的 banner 就是契约句
+  [PASS] en 的 banner 是英文
+  [PASS] en 的 banner.en 是中文契约句
+  [PASS] zh 的 banner.en 是英文
+  [PASS] 两种语言的键集合一致（zh=35, en=35）
+  [PASS] zh 没有多余键: []
+  [PASS] zh 日志用中文
+  [PASS] en 日志用英文
+  [PASS] 占位符被正确替换
+  [PASS] 未知键回退为键名
+---- 真实枪包指纹（只读） ----
+  [PASS] 真实枪包命中指纹（耗时 22 ms）
+  证据: zip:gunpack.meta.json -> namespace=ocle
+  [PASS] 证据指向 ocle
+---- 软删除：移入回收站 + 可恢复 ----
+  [PASS] 扫描命中 3 处（实际 3）
+  已移入回收站: C:\Users\ADMINI~1\AppData\Local\Temp\ocle-guard-selftest-9089475414934546302\quarantine\.minecraft\ocle_guard_trash\2026-10-23_22-47-39\ocle-copy.zip（1 个文件 / 0 个目录 / 326 字节，6 ms）
+  已移入回收站: C:\Users\ADMINI~1\AppData\Local\Temp\ocle-guard-selftest-9089475414934546302\quarantine\.minecraft\ocle_guard_trash\2026-10-23_22-47-39\绝对彼方 v1.11.0.zip（1 个文件 / 0 个目录 / 326 字节，5 ms）
+  已移入回收站: C:\Users\ADMINI~1\AppData\Local\Temp\ocle-guard-selftest-9089475414934546302\quarantine\.minecraft\ocle_guard_trash\2026-10-23_22-47-39\extracted-ocle（1 个文件 / 5 个目录 / 26 字节，11 ms）
+  [PASS] 3 处全部移动成功
+  [PASS] 原位置已不存在 ocle zip
+  [PASS] 原位置已不存在 ocle 目录
+  [PASS] 回收站里有该 zip
+  [PASS] 回收站里有该目录
+  [PASS] 回收站里 zip 字节数不变（数据未丢）
+  [PASS] manifest.txt 已生成
+  [PASS] manifest 记录了原始路径
+  [PASS] manifest 记录了证据
+  [PASS] RESTORE.txt 已生成
+  [PASS] 恢复说明含原始路径
+  [PASS] 恢复说明双语
+  [PASS] 再次扫描不再命中回收站内容
+  [PASS] 从回收站复制回原位成功，内容一致
+  [PASS] 其他枪包仍在（未误伤）
+  [PASS] mytaczpack 里的其他枪包仍在
+---- 静默放行 ----
+  [PASS] 只有 tacz 目录 + 其他枪包 -> 不触发
+  [PASS] 空游戏目录 -> 不触发
+---- 软删除护栏 ----
+  [PASS] 拒绝移动 mods 目录内的文件
+  [PASS] 拒绝移动游戏目录本身
+  [PASS] 拒绝移动游戏目录之外的文件
+  [PASS] 拒绝把回收站里的东西再移一次
+
+================ 结果 ================
+通过: 51    失败: 0
+全部通过。
