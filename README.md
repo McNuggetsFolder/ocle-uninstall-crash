@@ -1,3 +1,5 @@
+注意：该mod全部有deepseek 4.1 flash（workbuddy）完成
+
 # 加载绝对彼方就卸载崩溃
 
 > Minecraft **1.20.1** / Forge **47.x** / Java **17**
